@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>광북고 2학년 1반 일정표</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+        select{width: 100px; padding: .25em .5em; font-family: "Noto Sans KR",sans-serif; font-size: large; color: #ffff78;
+            background: #504a04 url('./img.png') no-repeat 95% 50%;
+            -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+        table{border-collapse : collapse; text-align:left; margin: auto}
+        td{border: 3px solid #ffff78; height: 50px; width: 60px; vertical-align: 0;}
+        body{font-family: 'Noto Sans KR', sans-serif; background-color: #ffff78;}
+        .title{font-size: 2.5em; font-weight: 900; text-align: center; color: #504a04}
+        .normal{color: #827907; background-color: #ffffaf; transition-duration: 500ms;}
+        .normal:hover{color: #504a04; background-color: #e6e69b; transition-duration: 500ms;}
+        .red{color: red; background-color: #ffc8c8; transition-duration: 500ms;}
+        .red:hover{background-color: #ffa578; transition-duration: 500ms;}
+        .blue{color: royalblue; background-color: #c8c8ff; transition-duration: 500ms;}
+        .blue:hover{background-color: #9696ff; transition-duration: 500ms;}
+        .name{color: #ffff78; background-color: #504a04; text-align: center; height: 30px}
+        .text{color: #827907; background-color: #ffffaf;}
+        .box{text-align: center}
+        .bold{font-weight: 900;}
+    </style>
+</head>
+<body>
+<div>
+    <div class="title">2학년 1반 수행일정표</div>
+    <div class="box">
+        <form name="menu" id="form">
+            <label for="monthMenu"></label>
+            <select name="monthSelect" id="monthMenu" onchange="changeMonth()">
+                <option>1월</option>
+                <option>2월</option>
+                <option>3월</option>
+                <option>4월</option>
+                <option>5월</option>
+                <option>6월</option>
+                <option>7월</option>
+                <option>8월</option>
+                <option>9월</option>
+                <option>10월</option>
+                <option>11월</option>
+                <option>12월</option>
+            </select>
+        </form>
+    </div>
+    <table id="myTable">
+        <tr>
+            <td class="name">일</td>
+            <td class="name">월</td>
+            <td class="name">화</td>
+            <td class="name">수</td>
+            <td class="name">목</td>
+            <td class="name">금</td>
+            <td class="name">토</td>
+        </tr>
+        <tr>
+            <td class="red" id="1" onclick="clickEvent(this)"></td>
+            <td class="normal" id="2" onclick="clickEvent(this)"></td>
+            <td class="normal" id="3" onclick="clickEvent(this)"></td>
+            <td class="normal" id="4" onclick="clickEvent(this)"></td>
+            <td class="normal" id="5" onclick="clickEvent(this)"></td>
+            <td class="normal" id="6" onclick="clickEvent(this)"></td>
+            <td class="blue" id="7" onclick="clickEvent(this)"></td>
+        </tr>
+        <tr>
+            <td class="red" id="8" onclick="clickEvent(this)"></td>
+            <td class="normal" id="9" onclick="clickEvent(this)"></td>
+            <td class="normal" id="10" onclick="clickEvent(this)"></td>
+            <td class="normal" id="11" onclick="clickEvent(this)"></td>
+            <td class="normal" id="12" onclick="clickEvent(this)"></td>
+            <td class="normal" id="13" onclick="clickEvent(this)"></td>
+            <td class="blue" id="14" onclick="clickEvent(this)"></td>
+        </tr>
+        <tr>
+            <td class="red" id="15" onclick="clickEvent(this)"></td>
+            <td class="normal" id="16" onclick="clickEvent(this)"></td>
+            <td class="normal" id="17" onclick="clickEvent(this)"></td>
+            <td class="normal" id="18" onclick="clickEvent(this)"></td>
+            <td class="normal" id="19" onclick="clickEvent(this)"></td>
+            <td class="normal" id="20" onclick="clickEvent(this)"></td>
+            <td class="blue" id="21" onclick="clickEvent(this)"></td>
+        </tr>
+        <tr>
+            <td class="red" id="22" onclick="clickEvent(this)"></td>
+            <td class="normal" id="23" onclick="clickEvent(this)"></td>
+            <td class="normal" id="24" onclick="clickEvent(this)"></td>
+            <td class="normal" id="25" onclick="clickEvent(this)"></td>
+            <td class="normal" id="26" onclick="clickEvent(this)"></td>
+            <td class="normal" id="27" onclick="clickEvent(this)"></td>
+            <td class="blue" id="28" onclick="clickEvent(this)"></td>
+        </tr>
+        <tr>
+            <td class="red" id="29" onclick="clickEvent(this)"></td>
+            <td class="normal" id="30" onclick="clickEvent(this)"></td>
+            <td class="normal" id="31" onclick="clickEvent(this)"></td>
+            <td class="normal" id="32" onclick="clickEvent(this)"></td>
+            <td class="normal" id="33" onclick="clickEvent(this)"></td>
+            <td class="normal" id="34" onclick="clickEvent(this)"></td>
+            <td class="blue" id="35" onclick="clickEvent(this)"></td>
+        </tr>
+        <tr>
+            <td class="red" id="36" onclick="clickEvent(this)"></td>
+            <td class="normal" id="37" onclick="clickEvent(this)"></td>
+            <td class="normal" id="38" onclick="clickEvent(this)"></td>
+            <td class="normal" id="39" onclick="clickEvent(this)"></td>
+            <td class="normal" id="40" onclick="clickEvent(this)"></td>
+            <td class="normal" id="41" onclick="clickEvent(this)"></td>
+            <td class="blue" id="42" onclick="clickEvent(this)"></td>
+        </tr>
+        <tr>
+            <td class="text" id="textBox" colspan="7"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
